@@ -1,0 +1,14 @@
+weight = input("How much do you weigh in lb? ")
+height = input("How tall are you in inches? ")
+BMI = (int(weight) * 703) / (int(height) * int(height))
+BMI_2 = int(BMI)
+if(BMI_2) < 18.5:
+  health = "underweight."
+elif(BMI_2) < 25:
+  health = "healthy."
+elif(BMI_2) < 30:
+  health = "overweight."
+else:
+  health = "obese."
+  
+print("Your BMI is", BMI_2, "and you are", health)
